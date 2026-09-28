@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta SEO · Space to Rise</title>
+<meta name="description" content="Propuesta de reconstrucción SEO para spacetorise.com: palabras clave, páginas a crear, línea para empresas y proyección de tráfico a 12 meses.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@200;300;400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F9F5ED; --sage:#B9D7D0; --blush:#EFBEB6; --coral:#D9534F;
+    --ink:#333333; --gray:#575756; --taupe:#7A6E5D; --white:#fff; --line:#E7E0D3;
+    --sage-deep:#5F9C8E;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;line-height:1.6;font-size:17px}
+  h1,h2,h3{font-family:'Noto Serif Display',Georgia,serif;font-weight:200;letter-spacing:.02em;margin:0 0 .4em;line-height:1.15;color:var(--gray)}
+  h1{font-size:clamp(2.2rem,6vw,4rem)}
+  h2{font-size:clamp(1.7rem,4vw,2.5rem);text-transform:uppercase;letter-spacing:.08em}
+  h3{font-size:1.35rem}
+  p{margin:0 0 1em}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+  header.top b{font-family:'Noto Serif Display',serif;font-weight:300;font-size:1.25rem;letter-spacing:.12em;color:var(--gray)}
+  .hero{padding:60px 0 50px;border-bottom:1px solid var(--line)}
+  .hero .kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.75rem;color:var(--taupe);margin-bottom:18px}
+  .hero p.lead{font-size:1.15rem;max-width:640px;color:var(--gray)}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .sub{color:var(--taupe);max-width:680px;margin-bottom:28px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
+  .tile{background:var(--white);border:1px solid var(--line);padding:22px 22px 18px;border-radius:4px}
+  .tile .n{font-family:'Noto Serif Display',serif;font-weight:300;font-size:2.4rem;line-height:1;color:var(--gray)}
+  .tile .l{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--taupe);margin-top:8px}
+  .tile.sage{background:var(--sage)} .tile.blush{background:var(--blush)}
+  table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);font-size:.95rem}
+  th,td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+  th{font-weight:500;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--taupe);background:#FCFAF5}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  tr.group td{background:var(--sage);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem;color:var(--gray)}
+  tr.group.emp td{background:var(--blush)}
+  .kw{color:var(--taupe);font-size:.88rem}
+  .tag{display:inline-block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:2px;background:var(--cream);border:1px solid var(--line);color:var(--taupe);margin-left:6px;vertical-align:middle}
+  .tag.emp{background:var(--blush);border-color:var(--blush);color:var(--gray)}
+  .chart{background:var(--white);border:1px solid var(--line);padding:24px;border-radius:4px;margin:20px 0}
+  .chart svg{width:100%;height:auto;display:block}
+  .legend{display:flex;gap:22px;flex-wrap:wrap;font-size:.85rem;color:var(--taupe);margin-top:10px}
+  .legend i{display:inline-block;width:22px;height:3px;vertical-align:middle;margin-right:8px;border-radius:2px}
+  .callout{background:var(--blush);padding:34px;border-radius:4px;margin-top:30px}
+  .callout h3{margin-top:0}
+  .price{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+  .price .box{background:var(--white);border:1px solid var(--line);padding:30px;border-radius:4px}
+  .price .box.main{background:var(--sage);border-color:var(--sage)}
+  .price .amount{font-family:'Noto Serif Display',serif;font-weight:300;font-size:3rem;color:var(--gray);line-height:1}
+  .price .amount small{font-size:1rem;font-family:'Jost';letter-spacing:.15em;text-transform:uppercase;color:var(--taupe)}
+  ul{padding-left:20px;margin:10px 0}
+  li{margin:6px 0}
+  .btn{display:inline-block;background:var(--gray);color:#fff;text-decoration:none;padding:14px 28px;letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;border-radius:2px;margin-top:14px}
+  footer{padding:36px 0;font-size:.8rem;color:var(--taupe);letter-spacing:.05em}
+  .note{font-size:.85rem;color:var(--taupe)}
+  @media (max-width:700px){
+    .price{grid-template-columns:1fr}
+    th:nth-child(3),td:nth-child(3){display:none}
+    section{padding:48px 0}
+    table{font-size:.88rem} th,td{padding:10px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><b>SPACE <span style="font-style:italic;font-size:.9em">to</span> RISE</b><span>Propuesta SEO · Sep 2026</span></header>
+
+  <div class="hero">
+    <div class="kicker">Reconstrucción del sitio web · spacetorise.com</div>
+    <h1>Que la gente que ya busca sanar te encuentre a ti.</h1>
+    <p class="lead">Una propuesta corta y clara: qué palabras clave vamos a atacar, qué páginas hay que construir para lograrlo (máximo 15), cómo abrimos la línea para empresas y qué tráfico podemos esperar en los próximos 6 a 12 meses.</p>
+  </div>
+
+  <!-- DIAGNÓSTICO -->
+  <section id="hoy">
+    <h2>Punto de partida</h2>
+    <p class="sub">Datos de Semrush (base de datos Colombia, sep 2026). El sitio actual es bonito, pero Google prácticamente no lo muestra: casi nadie llega buscando.</p>
+    <div class="tiles">
+      <div class="tile"><div class="n">≈ 0</div><div class="l">Visitas orgánicas / mes</div></div>
+      <div class="tile"><div class="n">2 / 100</div><div class="l">Authority Score</div></div>
+      <div class="tile"><div class="n">214</div><div class="l">Dominios que ya enlazan</div></div>
+      <div class="tile sage"><div class="n">~7.100</div><div class="l">Búsquedas / mes a las que podemos apuntar</div></div>
+    </div>
+    <p class="note">Los 214 dominios que ya enlazan son una buena base: el problema no es la autoridad, es que hoy no existen páginas que respondan a lo que la gente busca.</p>
+  </section>
+
+  <!-- KEYWORDS + PÁGINAS -->
+  <section id="paginas">
+    <h2>Palabras clave y páginas</h2>
+    <p class="sub">15 páginas en total. Cada una ataca un grupo de búsquedas concreto. Volumen = búsquedas mensuales en Colombia; KD = dificultad para posicionar (0–100, menor es más fácil).</p>
+
+    <table>
+      <thead><tr><th style="width:38%">Página</th><th>Palabras clave que ataca</th><th class="num">Vol./mes</th><th class="num">KD</th></tr></thead>
+      <tbody>
+        <tr class="group"><td colspan="4">Personas · Hipnoterapia RTT</td></tr>
+        <tr><td><strong>1. Inicio</strong><br><span class="kw">Hipnoterapia en Bogotá y online</span></td><td class="kw">hipnosis bogota · hipnoterapia bogota · hipnoterapia colombia · hipnoterapia en bogota</td><td class="num">450</td><td class="num">15–18</td></tr>
+        <tr><td><strong>2. ¿Qué es RTT?</strong><br><span class="kw">Terapia de Transformación Rápida</span></td><td class="kw">hipnoterapia · que es la hipnoterapia · beneficios de la hipnoterapia · rtt terapia · hipnoterapia marisa peer</td><td class="num">760</td><td class="num">15–30</td></tr>
+        <tr><td><strong>3. Hipnosis para ansiedad, miedos y fobias</strong></td><td class="kw">terapia para la ansiedad · hipnosis para la ansiedad · miedo a volar en aviones · perder el miedo a volar · hipnosis para sanar traumas</td><td class="num">560</td><td class="num">18–45</td></tr>
+        <tr><td><strong>4. Hipnosis para bajar de peso</strong></td><td class="kw">hipnosis para adelgazar · hipnosis para bajar de peso · hipnosis para bajar de peso bogota · autohipnosis para bajar de peso</td><td class="num">300</td><td class="num">22–31</td></tr>
+        <tr><td><strong>5. Hipnosis para dormir bien</strong></td><td class="kw">hipnosis para dormir · hipnoterapia para dormir · hipnosis guiada para dormir profundamente</td><td class="num">210</td><td class="num">34</td></tr>
+        <tr><td><strong>6. Creencias limitantes</strong> <span class="tag">guía</span><br><span class="kw">Artículo largo con CTA a sesión</span></td><td class="kw">creencias limitantes · creencias limitantes ejemplos · como eliminar una creencia limitante · como identificar mis creencias limitantes</td><td class="num">770</td><td class="num">13–23</td></tr>
+        <tr><td><strong>7. Preguntas frecuentes sobre hipnosis</strong></td><td class="kw">la hipnosis es real · peligros de la hipnosis · para que sirve la hipnosis · hipnoterapia funciona · hipnosis clinica</td><td class="num">960</td><td class="num">17–38</td></tr>
+
+        <tr class="group"><td colspan="4">Personas · Otros servicios</td></tr>
+        <tr><td><strong>8. Coaching de vida</strong></td><td class="kw">coaching de vida · coach emocional bogota · coach de vida colombia</td><td class="num">370</td><td class="num">15–18</td></tr>
+        <tr><td><strong>9. Baño de gong</strong></td><td class="kw">baño de gong · baño de sonido · baño de sonido con cuencos tibetanos</td><td class="num">130</td><td class="num">18</td></tr>
+        <tr><td><strong>10. Audios de autohipnosis</strong> <span class="tag">tienda</span></td><td class="kw">autohipnosis · audios de autohipnosis · autohipnosis guiada · autohipnosis para reprogramar tu mente</td><td class="num">230</td><td class="num">17–24</td></tr>
+        <tr><td><strong>11. RTT para niños</strong></td><td class="kw">hipnoterapia para niños · hipnosis para niños · terapia para la ansiedad en niños</td><td class="num">70</td><td class="num">n/a</td></tr>
+
+        <tr class="group emp"><td colspan="4">Empresas · Nueva línea B2B</td></tr>
+        <tr><td><strong>12. Bienestar para empresas</strong> <span class="tag emp">B2B</span><br><span class="kw">Página principal de la línea corporativa</span></td><td class="kw">bienestar laboral · programa de bienestar laboral · plan de bienestar laboral · actividades de bienestar laboral · bienestar empresarial</td><td class="num">1.900</td><td class="num">14–33</td></tr>
+        <tr><td><strong>13. Taller: manejo del estrés y burnout</strong> <span class="tag emp">B2B</span></td><td class="kw">burnout laboral · manejo del estres laboral · taller manejo del estres laboral · como prevenir el burnout laboral</td><td class="num">780</td><td class="num">22–45</td></tr>
+        <tr><td><strong>14. Coaching y charlas para equipos</strong> <span class="tag emp">B2B</span></td><td class="kw">coaching empresarial · coaching empresarial bogota · talleres de coaching para empresas · charlas motivacionales para empresas</td><td class="num">360</td><td class="num">22–28</td></tr>
+
+        <tr class="group"><td colspan="4">Confianza</td></tr>
+        <tr><td><strong>15. Sobre Andre + Contacto</strong></td><td class="kw">Marca · agenda tu cita · WhatsApp. No apunta a keywords: convierte.</td><td class="num">—</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:14px">Se descartan a propósito las búsquedas de gente que quiere <em>estudiar</em> hipnosis (cursos, pdf, certificaciones): traen visitas pero no clientes. La página de Sobre mí, Misión y Gift for you actuales se consolidan.</p>
+  </section>
+
+  <!-- EMPRESAS -->
+  <section id="empresas">
+    <h2>La línea para empresas</h2>
+    <p class="sub">Es el grupo con más búsquedas de toda la propuesta (≈3.000/mes) y con menos competencia real de terapeutas: casi todo lo que aparece hoy en Google son artículos genéricos de RRHH, no alguien que ofrezca el servicio.</p>
+    <div class="callout">
+      <h3>Cómo lo presentamos</h3>
+      <p>Una sección <strong>/empresas</strong> con tres páginas (12, 13 y 14). La página principal habla en el idioma de Recursos Humanos ("programa de bienestar laboral") y las otras dos son las ofertas concretas: un taller de manejo del estrés y burnout, y coaching / charlas para equipos. Cada una cierra con un formulario corto de cotización en vez de "agenda tu cita".</p>
+      <p style="margin:0">Las búsquedas B2B son pocas pero cada contacto vale mucho más: un taller para 20 personas equivale a muchas sesiones individuales.</p>
+    </div>
+  </section>
+
+  <!-- PROYECCIÓN -->
+  <section id="proyeccion">
+    <h2>Proyección de tráfico</h2>
+    <p class="sub">Visitas orgánicas por mes, partiendo de cero. Supuesto sencillo: las páginas nuevas empiezan a posicionar entre el mes 2 y 3, y al mes 12 captamos entre el 15 % y el 28 % de las búsquedas a las que apuntamos. Sin pauta.</p>
+
+    <div class="chart">
+      <svg viewBox="0 0 900 380" role="img" aria-label="Proyección de visitas orgánicas mensuales, meses 1 a 12">
+        <g stroke="#E7E0D3" stroke-width="1">
+          <line x1="70" y1="40" x2="870" y2="40"/><line x1="70" y1="110" x2="870" y2="110"/><line x1="70" y1="180" x2="870" y2="180"/><line x1="70" y1="250" x2="870" y2="250"/><line x1="70" y1="320" x2="870" y2="320"/>
+        </g>
+        <g font-family="Jost" font-size="13" fill="#7A6E5D" text-anchor="end">
+          <text x="60" y="45">2.000</text><text x="60" y="115">1.500</text><text x="60" y="185">1.000</text><text x="60" y="255">500</text><text x="60" y="325">0</text>
+        </g>
+        <g font-family="Jost" font-size="13" fill="#7A6E5D" text-anchor="middle">
+          <text x="70" y="350">M1</text><text x="143" y="350">M2</text><text x="215" y="350">M3</text><text x="288" y="350">M4</text><text x="361" y="350">M5</text><text x="434" y="350">M6</text><text x="506" y="350">M7</text><text x="579" y="350">M8</text><text x="652" y="350">M9</text><text x="724" y="350">M10</text><text x="797" y="350">M11</text><text x="870" y="350">M12</text>
+        </g>
+        <path d="M70,320 L143,317 L215,307 L288,289 L361,264 L434,239 L506,211 L579,183 L652,152 L724,117 L797,82 L870,40 L870,180 L797,201 L724,219 L652,236 L579,253 L506,267 L434,281 L361,295 L288,306 L215,314 L143,319 L70,320 Z" fill="#B9D7D0" opacity=".45"/>
+        <path d="M70,320 L143,317 L215,307 L288,289 L361,264 L434,239 L506,211 L579,183 L652,152 L724,117 L797,82 L870,40" fill="none" stroke="#5F9C8E" stroke-width="2.5" stroke-dasharray="6 5"/>
+        <path d="M70,320 L143,319 L215,314 L288,306 L361,295 L434,281 L506,267 L579,253 L652,236 L724,219 L797,201 L870,180" fill="none" stroke="#575756" stroke-width="2.5"/>
+        <g font-family="Jost" font-size="13" font-weight="500" fill="#575756">
+          <circle cx="434" cy="281" r="5" fill="#575756"/><text x="434" y="272" text-anchor="middle">280</text>
+          <circle cx="434" cy="239" r="5" fill="#5F9C8E"/><text x="434" y="228" text-anchor="middle" fill="#5F9C8E">580</text>
+          <circle cx="870" cy="180" r="5" fill="#575756"/><text x="856" y="172" text-anchor="end">1.000</text>
+          <circle cx="870" cy="40" r="5" fill="#5F9C8E"/><text x="856" y="34" text-anchor="end" fill="#5F9C8E">2.000</text>
+        </g>
+        <text x="434" y="372" font-family="Jost" font-size="12" fill="#7A6E5D" text-anchor="middle">mes 6</text>
+        <text x="870" y="372" font-family="Jost" font-size="12" fill="#7A6E5D" text-anchor="end">mes 12</text>
+      </svg>
+      <div class="legend"><span><i style="background:#575756"></i>Escenario conservador</span><span><i style="background:#5F9C8E"></i>Escenario optimista</span></div>
+    </div>
+
+    <div class="tiles">
+      <div class="tile"><div class="n">280–580</div><div class="l">Visitas / mes al mes 6</div></div>
+      <div class="tile"><div class="n">1.000–2.000</div><div class="l">Visitas / mes al mes 12</div></div>
+      <div class="tile blush"><div class="n">15–40</div><div class="l">Contactos / mes al mes 12 *</div></div>
+    </div>
+    <p class="note">* Con una conversión típica del 1,5 % al 2 % de visita a contacto (WhatsApp, cita o cotización). Los primeros 2 meses son de construcción e indexación: el tráfico llega a partir del mes 3. Estas cifras son una estimación, no una garantía; dependen de que el contenido se publique completo y de que Google indexe el sitio nuevo.</p>
+  </section>
+
+  <!-- INVERSIÓN -->
+  <section id="inversion">
+    <h2>Inversión</h2>
+    <p class="sub">Sin contratos largos. Se paga el sitio al entregarlo y la mensualidad se activa solo si ustedes quieren, cuando vean que las ventas lo justifican.</p>
+    <div class="price">
+      <div class="box main">
+        <div class="amount">USD 290 <small>contra entrega</small></div>
+        <p style="margin-top:14px"><strong>Reconstrucción del sitio</strong></p>
+        <ul>
+          <li>Las 15 páginas de esta propuesta, con textos optimizados</li>
+          <li>Sección /empresas con formulario de cotización</li>
+          <li>Tipografía y colores actuales de la marca</li>
+          <li>Sitio rápido, en móvil, con títulos, metadescripciones y datos estructurados</li>
+          <li>Google Search Console + Perfil de Empresa en Google conectados</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="amount">Opcional <small>mensual</small></div>
+        <p style="margin-top:14px"><strong>SEO continuo, cuando lo decidan</strong></p>
+        <ul>
+          <li>1–2 artículos nuevos al mes (ej. creencias limitantes, burnout)</li>
+          <li>Ajustes según lo que Google va posicionando</li>
+          <li>Reporte simple: visitas, keywords y contactos</li>
+          <li>Se puede activar, pausar o retomar en cualquier momento</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="siguiente" style="border-bottom:0">
+    <h2>Siguiente paso</h2>
+    <p class="sub">Si están de acuerdo con las páginas y el enfoque, arrancamos. Tiempo de entrega estimado: 3 semanas desde la aprobación.</p>
+    <a class="btn" href="mailto:success@thrust-x.com?subject=Propuesta%20SEO%20Space%20to%20Rise">Aprobar propuesta</a>
+  </section>
+
+  <footer>Fuente de datos: Semrush · base Colombia · septiembre 2026 · Preparado por Thrust-X para Space to Rise.</footer>
+</div>
+</body>
+</html>
